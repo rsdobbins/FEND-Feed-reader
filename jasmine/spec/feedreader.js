@@ -102,9 +102,11 @@ $(function() {
                 done();
             });
         });
-        
+
         it('contains at least one entry', function() {
-            expect($('.entry').length).toBeGreaterThan(0);
+    /* adding the parent class in to test for .entry with .feed   
+    */     
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
 
